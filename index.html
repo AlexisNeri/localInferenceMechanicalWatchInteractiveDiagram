@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%8C%9A%3C/text%3E%3C/svg%3E" />
+    <title>Mechanical Watch — Interactive 3D Guide</title>
+  </head>
+  <body>
+    <div id="scene-container"></div>
+
+    <header class="ui-title">
+      <h1 id="ui-title-text">The Mechanical Watch</h1>
+      <p id="ui-subtitle">An interactive 3D guide</p>
+    </header>
+
+    <button id="lang-btn" class="ui-lang" type="button" aria-label="Language / Idioma">🌐 EN</button>
+
+    <div id="view-selector" class="ui-view" role="group" aria-label="View / Vista">
+      <button class="ui-view-opt" data-mode="internals" type="button"><span data-i18n="internals">Internals</span></button>
+      <button class="ui-view-opt" data-mode="exterior" type="button"><span data-i18n="exterior">Exterior</span></button>
+    </div>
+
+    <div id="hint" class="ui-hint"></div>
+
+    <section id="panel" class="ui-panel" aria-live="polite">
+      <div id="panel-close" class="ui-panel-close" role="button" tabindex="0" aria-label="Close">✕</div>
+      <h2 id="panel-name"></h2>
+      <p id="panel-text"></p>
+    </section>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
